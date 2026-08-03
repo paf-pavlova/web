@@ -765,21 +765,48 @@
             gap: 8px;
         }
 
-        /* ===== OTHER SERVICES BUTTON ===== */
-        .other-services-wrap {
+        /* ===== NEW BLOCK: ADS SERVICES ===== */
+        .ads-services-wrap {
             text-align: center;
-            margin: 20px 0 0;
+            margin: 30px 0 20px;
+            padding: 24px 20px;
+            background: #ffffff;
+            border-radius: 20px;
+            border: 1px solid #edf2f7;
+            box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
         }
-        .other-services-wrap .btn-outline {
-            border-color: #cbd5e1;
-            color: #475569;
-            font-size: 0.9rem;
-            padding: 10px 28px;
+        .ads-services-wrap h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+            color: #0f172a;
         }
-        .other-services-wrap .btn-outline:hover {
-            background: #1a5a8c;
+        .ads-services-wrap p {
+            color: #64748b;
+            margin-bottom: 18px;
+            font-size: 1rem;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .ads-services-wrap .btn-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            justify-content: center;
+        }
+        .ads-services-wrap .btn-group .btn-outline {
             border-color: #1a5a8c;
+            color: #1a5a8c;
+        }
+        .ads-services-wrap .btn-group .btn-outline:hover {
+            background: #1a5a8c;
             color: #fff;
+        }
+        @media (max-width: 480px) {
+            .ads-services-wrap .btn-group .btn {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -913,7 +940,8 @@
                         <h4>Отслеживание бизнес-целей</h4>
                         <p>Веб-аналитика — это не просто счётчики, а измеритель достижения KPI (ключевых показателей). Вы ставите цели: заявка, звонок, покупка, подписка — и видите, какую часть пути проходит пользователь. Это помогает управлять воронкой продаж и прогнозировать доход.</p>
                     </div>
-                     </div>
+                    <!-- Блок "Обоснование инвестиций" удалён по вашему запросу -->
+                </div>
             </div>
         </section>
 
@@ -1081,12 +1109,17 @@
             </div>
         </section>
 
-        <!-- ===== OTHER SERVICES BUTTON ===== -->
-        <div class="container other-services-wrap">
-            <a href="#" class="btn-outline btn" target="_blank" rel="noopener noreferrer">
-                Другие услуги →
-            </a>
-            <!-- Замените href="#" на ссылку на ваш сайт с другими услугами -->
+        <!-- ===== NEW BLOCK: Настройка рекламы ===== -->
+        <div class="container">
+            <div class="ads-services-wrap">
+                <h3>Настройка рекламы в Яндекс.Директ и Google Ads</h3>
+                <p>Профессиональная настройка и ведение рекламных кампаний для привлечения целевого трафика</p>
+                <div class="btn-group">
+                    <!-- Замените href="#" на реальные ссылки на страницы с услугами -->
+                    <a href="#" class="btn" target="_blank" rel="noopener noreferrer">Яндекс Директ</a>
+                    <a href="#" class="btn-outline btn" target="_blank" rel="noopener noreferrer">Google Ads</a>
+                </div>
+            </div>
         </div>
 
         <!-- ===== CONTACTS ===== -->
